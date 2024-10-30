@@ -1,4 +1,5 @@
-variable "resource_group_name" {
-description = "rg_with_variable"
-type = string
+variable "location" {
+  description = "My Terraform first location"
+  type        = string
+  default     = "East US"
 }
