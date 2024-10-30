@@ -5,6 +5,6 @@ variable "location" {
 }
 
 variable "resource_group_name" {
-  description = "myTFResourceGroup"
+  name = "myTFResourceGroup"
   type        = string
 }
