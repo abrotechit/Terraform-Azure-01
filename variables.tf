@@ -1,7 +1,7 @@
 variable "location" {
   description = "My Terraform first location"
   type        = string
-  default     = "East US"
+  #default     = "East US"
   validation {
     condition = contains(["East US", "West US", "West Europe"], var.location)
     error_message = "The location must be one of those defined"
