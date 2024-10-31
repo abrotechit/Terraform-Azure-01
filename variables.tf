@@ -5,6 +5,15 @@ variable "location" {
 }
 
 variable "resource_group_name" {
-  name = "myTFResourceGroup"
+  default = "myTFResourceGroup"
   type        = string
+description = "My terraform first rg"
+}
+variable "tags" {
+  description = "Tags to be applied to all resources"
+  type        = map(string)
+  default     = {
+    environment = "dev"
+    team        = "IT"
+  }
 }
