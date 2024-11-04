@@ -1,3 +1,5 @@
+terraform{
+
 provider "azurerm" {
   features {}
 }
@@ -25,4 +27,5 @@ resource "azurerm_role_assignment" "reader_role_assignment" {
   principal_id         = azuread_user.standard_user.object_id
   role_definition_name = "Reader" # Assigns Reader role for view-only access
   scope                = azurerm_resource_group.example.id
+}
 }
