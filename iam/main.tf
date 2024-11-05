@@ -29,7 +29,7 @@ resource "azuread_user" "standard_user" {
   user_principal_name = "testuserad@a2zcybersecgmail.onmicrosoft.com"
   display_name        = "Standard User"
   mail_nickname       = "standarduser"
-  password            = "Jfklogt12$eus"0mega12$" # For production, use a secure method
+  password            = "Jfklogt12$eus@0mega12$" # For production, use a secure method
 }
 
 # Assign Reader Role to the User on the Resource Group Scope
