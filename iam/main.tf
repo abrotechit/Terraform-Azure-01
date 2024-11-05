@@ -26,7 +26,7 @@ resource "azurerm_resource_group" "alluserg" {
 
 # Create an Azure AD User
 resource "azuread_user" "standard_user" {
-  user_principal_name = "standarduser1@a2zcybersecgmail.onmicrosoft.com"
+  user_principal_name = "testuserad@a2zcybersecgmail.onmicrosoft.com"
   display_name        = "Standard User"
   mail_nickname       = "standarduser"
   password            = "test123" # For production, use a secure method
